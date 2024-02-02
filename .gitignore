@@ -128,3 +128,19 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+
+
+# Android/IntelliJ
+#
+build/
+android/app/debug/*
+.idea
+.gradle
+local.properties
+*.iml
+*.hprof
+.cxx/
+android/gradle.properties
+android/app/src/release/res/values/google_maps_api.xml
+android/app/release/*

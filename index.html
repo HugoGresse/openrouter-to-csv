@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenRouter.ai JSON to CSV Converter</title>
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+</head>
+<body>
+
+<div class="flex flex-col items-center justify-center min-h-screen bg-gray-100 dark:bg-gray-900">
+    <div class="rounded-lg border bg-card text-card-foreground shadow-sm w-full max-w-2xl border-indigo-500" data-v0-t="card">
+        <div class="flex flex-col space-y-1.5 p-6">
+            <h3 class="text-2xl dark:text-white font-semibold whitespace-nowrap leading-none tracking-tight">OpenRouter.ai JSON to CSV Converter</h3>
+            <p class="text-sm dark:text-white text-muted-foreground">Paste your JSON data below and click 'Convert' to get CSV data.</p>
+        </div>
+        <div class="p-6">
+            <div class="grid gap-4">
+                <div class="flex flex-col space-y-2">
+                    <label
+                            class="text-sm dark:text-white font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                            for="json-input"
+                    >
+                        JSON Input
+                    </label>
+                    <textarea
+                            class="flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                            id="json-input"
+                            placeholder="Paste your JSON data here..."
+                    ></textarea>
+                </div>
+                <div class="flex flex-col space-y-2">
+                    <label
+                            class="text-sm dark:text-white font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                            for="csv-output"
+                    >
+                        CSV Output
+                    </label>
+                    <textarea
+                            class="flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                            id="csv-output"
+                            readonly=""
+                    ></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center p-6">
+            <button class="inline-flex dark:text-white items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-indigo-500 text-primary-foreground  h-10 px-4 py-2 w-full"
+                id="convertButton"
+            >
+                Convert (and copy to clipboard if successful)
+            </button>
+        </div>
+    </div>
+</div>
+
+<script type="module" src="/main.js"></script>
+
+</body>
+</html>

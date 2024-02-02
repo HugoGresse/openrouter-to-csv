@@ -1,0 +1,21 @@
+{
+  "name": "openrouter-to-csv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "start": "npm run dev",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "Hugo Gresse",
+  "type": "commonjs",
+  "license": "MIT",
+  "dependencies": {
+    "csv-stringify": "^6.4.5",
+    "papaparse": "^5.4.1",
+    "vite": "^5.0.12"
+  }
+}
